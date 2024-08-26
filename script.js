@@ -1,4 +1,4 @@
-import { Drag as DragAndDropTactile } from "./drag-and-drop/drag-and-drop-tactile.js";
+import { DragAndDropTactile } from "./drag-and-drop/drag-and-drop-tactile.js";
 
 function drop(msj) {
   console.log(`drop ${msj}`);
@@ -40,4 +40,26 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   DragAndDropTactile(draggable, dropzone, dragContainer, { fn: drop, params: ["Yo soy un parametro"] });
+
+  const drag2 = document.getElementById("draggable2");
+  drag2.style.left = "150px";
+  drag2.style.top = dragContainerTop + "px";
+  const dropZone2 = document.getElementById("dropzone2");
+  dropZone2.style.left = "150px";
+
+  DragAndDropTactile(
+    {
+      elm: drag2,
+      left: parseInt(drag2.style.left),
+      top: parseInt(drag2.style.top),
+    },
+    dropZone2,
+    dragContainer,
+    {
+      fn: () => {
+        console.log("drop2");
+      },
+      params: [],
+    }
+  );
 });

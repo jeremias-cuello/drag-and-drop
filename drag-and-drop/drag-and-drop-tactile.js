@@ -33,7 +33,7 @@ function DragAndDropTactile(draggable, dropZone, dragContainer, { fn, params }) 
   };
 
   /**
-   * Function Event
+   * Event Function
    */
   const draggableTouchStart = function (e) {
     const touch = e.targetTouches[0];
@@ -51,7 +51,7 @@ function DragAndDropTactile(draggable, dropZone, dragContainer, { fn, params }) 
   };
 
   /**
-   * Function Event
+   * Event Function
    */
   const draggableTouchMove = function (e) {
     const touch = e.targetTouches[0];
@@ -95,4 +95,4 @@ function DragAndDropTactile(draggable, dropZone, dragContainer, { fn, params }) 
   });
 }
 
-export { DragAndDropTactile as Drag };
+export { DragAndDropTactile };
