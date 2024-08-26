@@ -1,0 +1,21 @@
+/* Variables recuperadas en JavaScript */
+
+* {
+    /* Container */
+    --container-top: 10px;
+    --container-left: 10px;
+    --container-width: 720px;
+    --containerL-height: 270px;
+
+    /* DropZone */
+    --dropZone-top: 150px;
+    --dropZone-left: 15px;
+    --dropZone-width: 100px;
+    --dropZone-height: 100px;
+
+    /* Draggable */
+    --draggable-top: 10px;
+    --draggable-left: 10px;
+    --draggable-width: 80px;
+    --draggable-height: 80px;
+}

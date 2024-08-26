@@ -1,0 +1,27 @@
+@import url("./config.css");
+
+.container {
+    top: var(--container-top);
+    left: var(--container-left);
+    width: var(--container-width) !important;
+    height: var(--containerL-height) !important;
+    position: relative !important;
+}
+
+.draggable {
+    top: var(--draggable-top);
+    left: var(--draggable-left);
+    width: var(--draggable-width) !important;
+    height: var(--draggable-height) !important;
+    position: absolute !important;
+    z-index: 2 !important;
+}
+
+.dropzone {
+    width: var(--dropZone-width) !important;
+    height: var(--dropZone-height) !important;
+    top: var(--dropZone-top);
+    left: var(--dropZone-left);
+    position: absolute !important;
+    z-index: 1 !important;
+}
